@@ -16,24 +16,17 @@ for(j=0;j<4;j++){
 wrap.innerHTML = str;
 
 var boards = document.querySelectorAll('.wrap>div');
-var selectedDom = null;
+var selected;
 
+function selectBoard(e) {
+    console.log('selected');
 
-    function selectBoard() {
-        console.log('selected');
-
-        var board = event.currentTarget;
-        console.log(board)
-
-        if(selectedDom){
-            selectedDom.className =  selectedDom.className.replace(' select', '');
-          }
-
-        board.className +='select';
-
-        selectedDom = board;
-
-    }
+        if(selected != undefined) {
+            selected.style.backgroundColor = null;
+        }
+        e.currentTarget.style.backgroundColor = "red";
+        selected = e.currentTarget;
+}
 
 for(var i = 0; i<16; i++) {
     boards[i].addEventListener('click', selectBoard);
