@@ -17,7 +17,7 @@ function print(json){
         str +='<a href="http://1boon.kakao.com/'+path+'"target ="_blank">'+title+'</a><br>';
     }
 
-    document.getElementById('wrap').innerHTML = str;
+    document.getElementById('wrap').innerHTML += str;
 }
 
 function getUrlData(url, callback){
@@ -33,3 +33,15 @@ fetch(url)
   });
 
 }
+
+page = 1;
+
+document.getElementById('button').addEventListener('click',function(){
+    page +=1 ;
+    url ='https://1boon.kakao.com/ch/enter.json?page='+page+'&pagesize=10'
+    getUrlData(url,print);
+    
+    
+
+
+})
