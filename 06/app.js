@@ -41,6 +41,7 @@ document.getElementById('button').addEventListener('click',function(){
     query = document.getElementById("search").value;
     pagesize=10;
     getdata(query, options,print);
+    document.getElementById("moreview").style.visibility="visible";
 })
 
 
