@@ -1,8 +1,3 @@
-// function addPoint(){
-//     point++;
-//     $point
-// }
-
 // function move() {
 //     var x = random(wrapwidth - bugwidth);
 //     var y = random(wrapwidth - bugwidth);
@@ -24,3 +19,6 @@ function changeColor(e){
 
 clickBox.addEventListener('click', changeColor);
 
+function Point(){
+    
+}
