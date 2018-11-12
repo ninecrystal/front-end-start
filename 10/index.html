@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>game</title>
+    <style>
+        #title{text-align: center;}
+        #box{
+            width:70%;
+            margin: auto;
+            padding-bottom : 15px;
+            border:3px solid #ddd;
+    
+            }
+        #game{
+            width:70%;
+            margin: auto;
+            padding-bottom:500px;
+            border : 3px solid black;
+        }
+        .clickBox{
+            width:25px;
+            height:25px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id= "title"><h2>박스클릭 게임</h2></div>
+    <div id="box" class= "box">
+        <div id="score">SCORE</div>
+        <div id="level">LEVEL</div>
+        <div id="miss">MISS</div>
+    </div>
+    <div id="game" class ="box">
+        <div class="clickBox"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
