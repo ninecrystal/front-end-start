@@ -1,10 +1,7 @@
-// function move() {
-//     var x = random(wrapwidth - bugwidth);
-//     var y = random(wrapwidth - bugwidth);
-//     console.log
-// }
 var clickBox=document.querySelector('.clickBox');
+var attribute = document.querySelector('.attribute');
 var selected;
+var score, level, miss;
 
 function changeColor(e){
     console.log('selected');
@@ -14,11 +11,19 @@ function changeColor(e){
     }
     e.currentTarget.style.backgroundColor = "blue";
     selected = e.currentTarget;
+    setTimeout(function back(e){
+        selected.style.backgroundColor = null;
+    },1500)
 }
 
+function Point(){
+
+}
 
 clickBox.addEventListener('click', changeColor);
 
-function Point(){
-    
+function move() {
+    var x = Math.random(wrapwidth - bugwidth);
+    var y = Math.random(wrapwidth - bugwidth);
+    console.log
 }

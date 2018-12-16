@@ -1,0 +1,23 @@
+#title{
+    text-align : center;
+}
+#box{
+    width:70%;
+    margin: auto;
+    border:3px solid #ddd;
+    
+    }
+#game{
+    width:70%;
+    margin: auto;
+    padding-bottom:500px;
+    border : 3px solid black;
+    }
+.clickBox{
+    width:25px;
+    height:25px;
+    background-color: red;
+    }
+#attribute{
+    text-align: center;
+    }
